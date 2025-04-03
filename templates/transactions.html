@@ -38,6 +38,11 @@
             background-color: #f6d365;
             border-color: #f6d365;
         }
+
+        .balance-row {
+            font-weight: bold;
+            background-color: #f8f9fa;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +68,11 @@
                     </td>
                 </tr>
                 {% endfor %}
+                <!-- Total Balance Row -->
+                <tr class="balance-row">
+                    <td colspan="2" class="text-right">Total Balance:</td>
+                    <td>{{ balance }}</td>
+                </tr>
             </tbody>
         </table>
 
